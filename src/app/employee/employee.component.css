@@ -1,0 +1,42 @@
+button{
+  margin-right: 3px;
+}
+p{
+  margin-right: 70px;
+}
+.employee{
+min-width: 50%;
+  height: auto;
+ display: flex;
+ flex-direction:column;
+box-shadow: black;
+border: black 1px;
+}
+.empName{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.report{
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 5px;
+
+}
+.reportHeader{
+  background-color: #c7c6c6;
+  padding: 8px;
+}
+.reportName{
+margin-bottom: 1px;
+margin-top: 1px;
+float: left;
+}
+
+.buttons{
+  min-width: 20px;
+  flex-direction: row;
+}
+

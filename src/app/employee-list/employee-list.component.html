@@ -1,0 +1,6 @@
+<mat-grid-list class="employee-list" cols="1">
+  <div class="employee" *ngFor="let emp of employees">
+    <app-employee (crudOperation)= "doCrudOp($event)" [employee]="emp"></app-employee>
+
+  </div>
+</mat-grid-list>

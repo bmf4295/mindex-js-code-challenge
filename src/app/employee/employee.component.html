@@ -1,0 +1,24 @@
+<mat-card class="employee">
+  <mat-card-header class="empName" >
+    <mat-card-title><h4>{{employee.lastName}}, {{employee.firstName}} : {{employee.position}} </h4></mat-card-title>
+    <mat-card-subtitle>Employee ID: {{employee.id}} | Number of Direct Reports: {{numReports}}</mat-card-subtitle>
+  </mat-card-header>
+  <hr>
+  <mat-card-content>
+   <div class = "jobInfo">
+      <dt>Salary: ${{employee.compensation}}</dt>
+    </div>
+
+  </mat-card-content>
+  <mat-card-content>
+    <dt class="reportHeader">People Reporting to them:</dt>
+    <div class="report" *ngFor="let report of employee.reports">
+      <p class="reportName"> {{report.firstName}} {{report.lastName}} | Position: {{report.position}} | Salary: ${{report.compensation}}</p>
+      <div class="buttons">
+      <button mat-flat-button  color="primary" (click)="editEmployee(report.id)">Edit</button>
+      <button mat-flat-button color="warn" (click)="deleteEmployee(report.id)">Delete</button>
+    </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+<edit-dialogue></edit-dialogue>

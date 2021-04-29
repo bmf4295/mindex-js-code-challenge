@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+h1,h4{
+  color:rgb(77, 177, 211);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  height: 100%;
+}
+figure{
+ padding-bottom: 10px;
+}
+.mat-grid-title{
+  padding-top: 10%
+  }
